@@ -1,0 +1,778 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1263</width>
+    <height>852</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="autoFillBackground">
+   <bool>false</bool>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-image: url(:/newPrefix/walmartLogo.png);</string>
+  </property>
+  <property name="animated">
+   <bool>true</bool>
+  </property>
+  <property name="documentMode">
+   <bool>false</bool>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLabel" name="main_frame_top">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>1241</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-radius: 10px;
+background-color: white;</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="main_frame_left">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>70</y>
+      <width>611</width>
+      <height>741</height>
+     </rect>
+    </property>
+    <property name="whatsThis">
+     <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'MS Shell Dlg 2'; font-size:8pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;img src=&quot;:/newPrefix/download.png&quot; /&gt; fghfbgfh&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+    <property name="autoFillBackground">
+     <bool>false</bool>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-radius: 10px;
+background-color: white;</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="main_btn_addItem">
+    <property name="geometry">
+     <rect>
+      <x>540</x>
+      <y>80</y>
+      <width>75</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Berlin Sans FB</family>
+      <pointsize>14</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(0,113,206);
+color: white;
+border-radius: 15px;</string>
+    </property>
+    <property name="text">
+     <string>Add</string>
+    </property>
+   </widget>
+   <widget class="QTableWidget" name="main_table_items">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>150</y>
+      <width>591</width>
+      <height>491</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Berlin Sans FB</family>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color:rgb(0,113,206)</string>
+    </property>
+    <column>
+     <property name="text">
+      <string>Name</string>
+     </property>
+     <property name="font">
+      <font>
+       <family>Berlin Sans FB</family>
+       <pointsize>11</pointsize>
+      </font>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Unit Price</string>
+     </property>
+     <property name="font">
+      <font>
+       <family>Berlin Sans FB</family>
+       <pointsize>11</pointsize>
+      </font>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Quantity</string>
+     </property>
+     <property name="font">
+      <font>
+       <family>Berlin Sans FB</family>
+       <pointsize>11</pointsize>
+      </font>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Sub-Total</string>
+     </property>
+     <property name="font">
+      <font>
+       <family>Berlin Sans FB</family>
+       <pointsize>11</pointsize>
+      </font>
+     </property>
+    </column>
+   </widget>
+   <widget class="QLabel" name="main_frame_topRight">
+    <property name="geometry">
+     <rect>
+      <x>630</x>
+      <y>70</y>
+      <width>621</width>
+      <height>391</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-radius: 10px;
+background-color: white;</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="main_frame_rightCenter">
+    <property name="geometry">
+     <rect>
+      <x>630</x>
+      <y>470</y>
+      <width>621</width>
+      <height>341</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-radius: 10px;
+background-color: white;</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="main_label_total">
+    <property name="geometry">
+     <rect>
+      <x>41</x>
+      <y>650</y>
+      <width>61</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Berlin Sans FB</family>
+      <pointsize>18</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(0,113,206);</string>
+    </property>
+    <property name="text">
+     <string>Total:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="main_label_payed">
+    <property name="geometry">
+     <rect>
+      <x>31</x>
+      <y>700</y>
+      <width>71</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Berlin Sans FB</family>
+      <pointsize>18</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(0,113,206);</string>
+    </property>
+    <property name="text">
+     <string>Payed:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="main_label_change">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>750</y>
+      <width>81</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Berlin Sans FB</family>
+      <pointsize>18</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(0,113,206);</string>
+    </property>
+    <property name="text">
+     <string>Change:</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="main_lineEdit_payed">
+    <property name="geometry">
+     <rect>
+      <x>110</x>
+      <y>700</y>
+      <width>161</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Berlin Sans FB</family>
+      <pointsize>18</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">padding-left: 5px;</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="main_btn_topOffers">
+    <property name="geometry">
+     <rect>
+      <x>700</x>
+      <y>80</y>
+      <width>211</width>
+      <height>181</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Berlin Sans FB</family>
+      <pointsize>20</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(0,113,206);
+color: white;
+border-radius: 15px;</string>
+    </property>
+    <property name="text">
+     <string>Top Offers</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="main_btn_stats">
+    <property name="geometry">
+     <rect>
+      <x>980</x>
+      <y>80</y>
+      <width>221</width>
+      <height>181</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Berlin Sans FB</family>
+      <pointsize>20</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(0,113,206);
+color: white;
+border-radius: 15px;</string>
+    </property>
+    <property name="text">
+     <string>Statistics</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="main_btn_reviews">
+    <property name="geometry">
+     <rect>
+      <x>980</x>
+      <y>270</y>
+      <width>221</width>
+      <height>181</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Berlin Sans FB</family>
+      <pointsize>20</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(0,113,206);
+color: white;
+border-radius: 15px;</string>
+    </property>
+    <property name="text">
+     <string>Reviews</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="main_btn_lockTray">
+    <property name="geometry">
+     <rect>
+      <x>710</x>
+      <y>500</y>
+      <width>191</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Berlin Sans FB</family>
+      <pointsize>18</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(0,113,206);
+color: white;
+border-radius: 15px;</string>
+    </property>
+    <property name="text">
+     <string>Lock Tray</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="main_btn_complaint">
+    <property name="geometry">
+     <rect>
+      <x>700</x>
+      <y>270</y>
+      <width>211</width>
+      <height>181</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Berlin Sans FB</family>
+      <pointsize>18</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(0,113,206);
+color: white;
+border-radius: 15px;</string>
+    </property>
+    <property name="text">
+     <string>File Complaint</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="main_label_employeeName">
+    <property name="geometry">
+     <rect>
+      <x>650</x>
+      <y>610</y>
+      <width>201</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Berlin Sans FB</family>
+      <pointsize>18</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color:  rgb(0,113,206);</string>
+    </property>
+    <property name="text">
+     <string>Employee Name:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="main_label_counterNum">
+    <property name="geometry">
+     <rect>
+      <x>650</x>
+      <y>680</y>
+      <width>201</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Berlin Sans FB</family>
+      <pointsize>18</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(0,113,206);</string>
+    </property>
+    <property name="text">
+     <string>Counter Number:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="main_label_employeeName_2">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>830</x>
+      <y>610</y>
+      <width>341</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Berlin Sans FB</family>
+      <pointsize>18</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="main_frame_rightCenter_2">
+    <property name="geometry">
+     <rect>
+      <x>630</x>
+      <y>480</y>
+      <width>621</width>
+      <height>301</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="main_label_counterNum_2">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>830</x>
+      <y>680</y>
+      <width>341</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Berlin Sans FB</family>
+      <pointsize>18</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="main_img_logo">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>-35</y>
+      <width>201</width>
+      <height>141</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-image: url(:/Images/Screens/Images/walmartLogo.png);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="../resources.qrc">:/Images/Screens/Images/walmartLogo.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="main_combo_items">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>80</y>
+      <width>511</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Berlin Sans FB</family>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="cursor">
+     <cursorShape>ArrowCursor</cursorShape>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="editable">
+     <bool>false</bool>
+    </property>
+    <property name="maxVisibleItems">
+     <number>8</number>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="main_btn_genTotal">
+    <property name="geometry">
+     <rect>
+      <x>338</x>
+      <y>655</y>
+      <width>131</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Berlin Sans FB</family>
+      <pointsize>16</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(0,113,206);
+color: white;
+border-radius: 15px;</string>
+    </property>
+    <property name="text">
+     <string>Total</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="main_label_total_2">
+    <property name="geometry">
+     <rect>
+      <x>110</x>
+      <y>650</y>
+      <width>161</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Berlin Sans FB</family>
+      <pointsize>18</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="main_label_change_2">
+    <property name="geometry">
+     <rect>
+      <x>110</x>
+      <y>750</y>
+      <width>161</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Berlin Sans FB</family>
+      <pointsize>18</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="main_btn_delItem">
+    <property name="geometry">
+     <rect>
+      <x>480</x>
+      <y>726</y>
+      <width>131</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Berlin Sans FB</family>
+      <pointsize>14</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(0,113,206);
+color: white;
+border-radius: 15px;</string>
+    </property>
+    <property name="text">
+     <string>Delete Item</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="main_btn_newBill">
+    <property name="geometry">
+     <rect>
+      <x>480</x>
+      <y>655</y>
+      <width>131</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Berlin Sans FB</family>
+      <pointsize>14</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(0,113,206);
+color: white;
+border-radius: 15px;</string>
+    </property>
+    <property name="text">
+     <string>New Bill</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="main_btn_logOut">
+    <property name="geometry">
+     <rect>
+      <x>1000</x>
+      <y>500</y>
+      <width>181</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Berlin Sans FB</family>
+      <pointsize>18</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(0,113,206);
+color: white;
+border-radius: 15px;</string>
+    </property>
+    <property name="text">
+     <string>Log Out</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="main_btn_genChange">
+    <property name="geometry">
+     <rect>
+      <x>338</x>
+      <y>726</y>
+      <width>131</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Berlin Sans FB</family>
+      <pointsize>16</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(0,113,206);
+color: white;
+border-radius: 15px;</string>
+    </property>
+    <property name="text">
+     <string>Change</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="main_label_outOfStock">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>120</y>
+      <width>231</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Berlin Sans FB</family>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: red;
+padding-left: 5px;</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <zorder>main_frame_rightCenter_2</zorder>
+   <zorder>main_frame_top</zorder>
+   <zorder>main_frame_left</zorder>
+   <zorder>main_btn_addItem</zorder>
+   <zorder>main_table_items</zorder>
+   <zorder>main_frame_topRight</zorder>
+   <zorder>main_frame_rightCenter</zorder>
+   <zorder>main_label_total</zorder>
+   <zorder>main_label_payed</zorder>
+   <zorder>main_label_change</zorder>
+   <zorder>main_lineEdit_payed</zorder>
+   <zorder>main_btn_topOffers</zorder>
+   <zorder>main_btn_stats</zorder>
+   <zorder>main_btn_reviews</zorder>
+   <zorder>main_btn_lockTray</zorder>
+   <zorder>main_btn_complaint</zorder>
+   <zorder>main_label_employeeName</zorder>
+   <zorder>main_label_counterNum</zorder>
+   <zorder>main_label_employeeName_2</zorder>
+   <zorder>main_label_counterNum_2</zorder>
+   <zorder>main_img_logo</zorder>
+   <zorder>main_combo_items</zorder>
+   <zorder>main_btn_genTotal</zorder>
+   <zorder>main_label_total_2</zorder>
+   <zorder>main_label_change_2</zorder>
+   <zorder>main_btn_delItem</zorder>
+   <zorder>main_btn_newBill</zorder>
+   <zorder>main_btn_logOut</zorder>
+   <zorder>main_btn_genChange</zorder>
+   <zorder>main_label_outOfStock</zorder>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1263</width>
+     <height>21</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources>
+  <include location="../resources.qrc"/>
+ </resources>
+ <connections/>
+</ui>
