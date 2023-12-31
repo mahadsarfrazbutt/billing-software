@@ -1,0 +1,847 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1047</width>
+    <height>820</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>1000</width>
+    <height>820</height>
+   </size>
+  </property>
+  <property name="font">
+   <font>
+    <pointsize>11</pointsize>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QFrame" name="frame_left">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>18</y>
+      <width>161</width>
+      <height>751</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgba(33, 37, 41, 1);
+border-top-left-radius: 30px;
+border-bottom-left-radius: 30px</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QLabel" name="logo">
+     <property name="geometry">
+      <rect>
+       <x>25</x>
+       <y>20</y>
+       <width>101</width>
+       <height>91</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border-image: url(:/images/screens/images/logo_edited.png);</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="btn_logout">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>680</y>
+       <width>101</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Berlin Sans FB</family>
+       <pointsize>12</pointsize>
+      </font>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="toolTip">
+      <string>return to login page</string>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgba(255, 255, 255, 0);
+color: white</string>
+     </property>
+     <property name="text">
+      <string>  Logout</string>
+     </property>
+     <property name="icon">
+      <iconset resource="../resources.qrc">
+       <normaloff>:/Images/screens/images/logout.png</normaloff>:/Images/screens/images/logout.png</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>40</width>
+       <height>40</height>
+      </size>
+     </property>
+     <property name="shortcut">
+      <string>Ctrl+L</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QLabel" name="employee_num">
+    <property name="geometry">
+     <rect>
+      <x>298</x>
+      <y>35</y>
+      <width>101</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Berlin Sans FB</family>
+      <pointsize>45</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgba(0, 123, 255, 1);</string>
+    </property>
+    <property name="text">
+     <string>555</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="employee_desc">
+    <property name="geometry">
+     <rect>
+      <x>257</x>
+      <y>105</y>
+      <width>101</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Berlin Sans FB</family>
+      <pointsize>11</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgba(190, 199, 203, 1);</string>
+    </property>
+    <property name="text">
+     <string>Total Employees</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="inventory_desc">
+    <property name="geometry">
+     <rect>
+      <x>453</x>
+      <y>105</y>
+      <width>121</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Berlin Sans FB</family>
+      <pointsize>11</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgba(190, 199, 203, 1);</string>
+    </property>
+    <property name="text">
+     <string>Items in Inventory</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="inventory_num">
+    <property name="geometry">
+     <rect>
+      <x>490</x>
+      <y>36</y>
+      <width>91</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Berlin Sans FB</family>
+      <pointsize>45</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgba(255, 193, 8, 1);</string>
+    </property>
+    <property name="text">
+     <string>64</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="employee_img">
+    <property name="geometry">
+     <rect>
+      <x>228</x>
+      <y>43</y>
+      <width>71</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-image: url(:/images/screens/images/employee.png);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="inventory_img">
+    <property name="geometry">
+     <rect>
+      <x>443</x>
+      <y>45</y>
+      <width>55</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-image: url(:/images/screens/images/inventory.png);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="complaint_desc">
+    <property name="geometry">
+     <rect>
+      <x>650</x>
+      <y>104</y>
+      <width>71</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Berlin Sans FB</family>
+      <pointsize>11</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgba(190, 199, 203, 1);</string>
+    </property>
+    <property name="text">
+     <string>Complaints</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="complaint_num">
+    <property name="geometry">
+     <rect>
+      <x>667</x>
+      <y>35</y>
+      <width>91</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Berlin Sans FB</family>
+      <pointsize>45</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgba(220, 53, 69, 1);</string>
+    </property>
+    <property name="text">
+     <string>25</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="complaint_img">
+    <property name="geometry">
+     <rect>
+      <x>623</x>
+      <y>45</y>
+      <width>51</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-image: url(:/images/screens/images/complaint_icon_edited.png .png);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="offers_desc">
+    <property name="geometry">
+     <rect>
+      <x>831</x>
+      <y>104</y>
+      <width>71</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Berlin Sans FB</family>
+      <pointsize>11</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgba(190, 199, 203, 1);</string>
+    </property>
+    <property name="text">
+     <string>Top Offers</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="offers_img">
+    <property name="geometry">
+     <rect>
+      <x>776</x>
+      <y>25</y>
+      <width>101</width>
+      <height>81</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-image: url(:/images/screens/images/top_offer.jpeg);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="offers_num">
+    <property name="geometry">
+     <rect>
+      <x>849</x>
+      <y>35</y>
+      <width>61</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Berlin Sans FB</family>
+      <pointsize>45</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color:rgba(40, 167, 69, 1);</string>
+    </property>
+    <property name="text">
+     <string>4</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QTableWidget" name="table_employees">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>210</x>
+      <y>140</y>
+      <width>481</width>
+      <height>241</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>8</pointsize>
+     </font>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::NoFocus</enum>
+    </property>
+    <property name="gridStyle">
+     <enum>Qt::NoPen</enum>
+    </property>
+    <property name="sortingEnabled">
+     <bool>false</bool>
+    </property>
+    <property name="cornerButtonEnabled">
+     <bool>false</bool>
+    </property>
+    <column>
+     <property name="text">
+      <string>Employee</string>
+     </property>
+     <property name="font">
+      <font>
+       <family>Microsoft YaHei UI</family>
+       <pointsize>9</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Password</string>
+     </property>
+     <property name="font">
+      <font>
+       <family>Microsoft YaHei UI</family>
+       <pointsize>9</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Position</string>
+     </property>
+     <property name="font">
+      <font>
+       <family>Microsoft YaHei UI</family>
+       <pointsize>9</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Salary</string>
+     </property>
+     <property name="font">
+      <font>
+       <family>Microsoft YaHei UI</family>
+       <pointsize>9</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+    </column>
+   </widget>
+   <widget class="QPushButton" name="addemployee">
+    <property name="geometry">
+     <rect>
+      <x>776</x>
+      <y>335</y>
+      <width>121</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Microsoft YaHei UI</family>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="toolTip">
+     <string>add a new employee to your company</string>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgba(43, 43, 51, 1);
+border-radius: 15px;
+color: white;</string>
+    </property>
+    <property name="text">
+     <string>Add Employee</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lbl_name">
+    <property name="geometry">
+     <rect>
+      <x>707</x>
+      <y>139</y>
+      <width>61</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Segoe UI</family>
+      <pointsize>11</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string> Name:</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="le_name">
+    <property name="geometry">
+     <rect>
+      <x>776</x>
+      <y>147</y>
+      <width>161</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Segoe UI</family>
+      <pointsize>9</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border: 2px solid grey;
+border-radius: 10px;
+padding: 2px;</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lbl_passw">
+    <property name="geometry">
+     <rect>
+      <x>706</x>
+      <y>186</y>
+      <width>81</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Segoe UI</family>
+      <pointsize>11</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>Password:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lbl_position">
+    <property name="geometry">
+     <rect>
+      <x>706</x>
+      <y>235</y>
+      <width>71</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Segoe UI</family>
+      <pointsize>11</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>Position:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lbl_salary">
+    <property name="geometry">
+     <rect>
+      <x>708</x>
+      <y>285</y>
+      <width>71</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Segoe UI</family>
+      <pointsize>11</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>Salary($):</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lbl_message">
+    <property name="geometry">
+     <rect>
+      <x>700</x>
+      <y>380</y>
+      <width>271</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Segoe UI</family>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lbl_frame_right">
+    <property name="geometry">
+     <rect>
+      <x>190</x>
+      <y>18</y>
+      <width>791</width>
+      <height>751</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: white;
+border-top-right-radius: 30px;
+border-bottom-right-radius: 30px</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="Line" name="divider">
+    <property name="geometry">
+     <rect>
+      <x>190</x>
+      <y>400</y>
+      <width>791</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>17</pointsize>
+     </font>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Sunken</enum>
+    </property>
+    <property name="lineWidth">
+     <number>2</number>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="le_passw">
+    <property name="geometry">
+     <rect>
+      <x>777</x>
+      <y>195</y>
+      <width>161</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Segoe UI</family>
+      <pointsize>9</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border: 2px solid grey;
+border-radius: 10px;
+padding: 2px;</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="le_position">
+    <property name="geometry">
+     <rect>
+      <x>778</x>
+      <y>244</y>
+      <width>161</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Segoe UI</family>
+      <pointsize>9</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border: 2px solid grey;
+border-radius: 10px;
+padding: 2px;</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="le_salary">
+    <property name="geometry">
+     <rect>
+      <x>777</x>
+      <y>295</y>
+      <width>161</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Segoe UI</family>
+      <pointsize>9</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border: 2px solid grey;
+border-radius: 10px;
+padding: 2px;</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lbl_replenishinevntory">
+    <property name="geometry">
+     <rect>
+      <x>220</x>
+      <y>420</y>
+      <width>221</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Segoe UI</family>
+      <pointsize>18</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Replenish Inventory</string>
+    </property>
+   </widget>
+   <widget class="QTableWidget" name="table_inventory">
+    <property name="geometry">
+     <rect>
+      <x>220</x>
+      <y>470</y>
+      <width>531</width>
+      <height>281</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <column>
+     <property name="text">
+      <string>Product</string>
+     </property>
+     <property name="font">
+      <font>
+       <family>Microsoft YaHei UI</family>
+       <pointsize>9</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Current 
+Quantity</string>
+     </property>
+     <property name="font">
+      <font>
+       <family>Microsoft YaHei UI</family>
+       <pointsize>9</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Order 
+Quantity</string>
+     </property>
+     <property name="font">
+      <font>
+       <family>Microsoft YaHei UI</family>
+       <pointsize>9</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Order</string>
+     </property>
+     <property name="font">
+      <font>
+       <family>Microsoft YaHei UI</family>
+       <pointsize>9</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+    </column>
+   </widget>
+   <widget class="QLabel" name="lbl_message_2">
+    <property name="geometry">
+     <rect>
+      <x>447</x>
+      <y>435</y>
+      <width>161</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Segoe UI</family>
+      <pointsize>9</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color:green</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <zorder>lbl_frame_right</zorder>
+   <zorder>offers_img</zorder>
+   <zorder>frame_left</zorder>
+   <zorder>employee_num</zorder>
+   <zorder>employee_desc</zorder>
+   <zorder>inventory_desc</zorder>
+   <zorder>inventory_num</zorder>
+   <zorder>employee_img</zorder>
+   <zorder>inventory_img</zorder>
+   <zorder>complaint_desc</zorder>
+   <zorder>complaint_num</zorder>
+   <zorder>complaint_img</zorder>
+   <zorder>offers_desc</zorder>
+   <zorder>offers_num</zorder>
+   <zorder>table_employees</zorder>
+   <zorder>addemployee</zorder>
+   <zorder>lbl_name</zorder>
+   <zorder>le_name</zorder>
+   <zorder>lbl_passw</zorder>
+   <zorder>lbl_position</zorder>
+   <zorder>lbl_salary</zorder>
+   <zorder>lbl_message</zorder>
+   <zorder>divider</zorder>
+   <zorder>le_passw</zorder>
+   <zorder>le_position</zorder>
+   <zorder>le_salary</zorder>
+   <zorder>lbl_replenishinevntory</zorder>
+   <zorder>table_inventory</zorder>
+   <zorder>lbl_message_2</zorder>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources>
+  <include location="../resources_admin.qrc"/>
+  <include location="../resources.qrc"/>
+ </resources>
+ <connections/>
+</ui>
