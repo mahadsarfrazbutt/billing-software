@@ -1,0 +1,15 @@
+<RCC>
+  <qresource prefix="Images">
+    <file>screens/images/order.png</file>
+    <file>screens/images/blue_btn.jpg</file>
+    <file>screens/images/complaint.jpeg</file>
+    <file>screens/images/biscuit.jpeg</file>
+    <file>screens/images/olpers.jpg</file>
+    <file>screens/images/add_to_cart.png</file>
+    <file>screens/images/sunridge.jpeg</file>
+    <file>screens/images/blue_background.jpeg</file>
+    <file>screens/images/palmolive.jpg</file>
+    <file>screens/images/logout.png</file>
+    <file>screens/images/logo_edited.png</file>
+  </qresource>
+</RCC>

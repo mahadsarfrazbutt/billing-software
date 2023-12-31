@@ -1,0 +1,10 @@
+<RCC>
+  <qresource prefix="images">
+    <file>screens/images/blue_btn.jpg</file>
+    <file>screens/images/top_offer.jpeg</file>
+    <file>screens/images/complaint_icon_edited.png .png</file>
+    <file>screens/images/inventory.png</file>
+    <file>screens/images/logo_edited.png</file>
+    <file>screens/images/employee.png</file>
+  </qresource>
+</RCC>
