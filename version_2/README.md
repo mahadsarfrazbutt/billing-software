@@ -12,7 +12,7 @@
 ## Usage
 To view and understand the underlying logic beneath the program I have made a seperate code folder for those interested.
 If anyone would like to use this software, he can happily do so. Moreover, if anyone requires the installation setup or executable file
-file for the project, I will also be able to provide it.
+for the project, I will also be able to provide it.
 
 ## Snippets
 - Splash Screen
